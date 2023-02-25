@@ -1,0 +1,231 @@
+@import '@/assets/styles/_global.scss';
+
+.Contact {
+  padding: 0;
+
+  &-image {
+    img {
+      width: 100%;
+    }
+  }
+  
+  &-wrapper {
+    
+    &-center {
+      background-image: url('../../assets/images/bitmap.png');
+      background-size: cover;
+      background-position: center;
+      justify-content: center;
+      height: 420px;
+    }
+  }
+
+  &-tab {
+
+    &-item {
+      text-align: center;
+    }
+  }
+
+  &-content{
+    margin: 8rem 1rem;
+    display: flex;
+  }
+
+  &-yourcare {
+    width: 281px;
+    height: 25px;
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+  }
+
+  &-doctor {
+    width: 392px;
+    height: 131px;
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 6rem;
+    line-height: 75px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+  }
+
+  &-form {
+    margin-left: 7.7rem;
+  }
+
+  &-start{
+    display: flex;
+  }
+
+  &-action {
+    display: flex;
+    flex-direction: row-reverse;
+    background: #ff9f00;
+    border-radius: 3rem;
+    padding: 3px 3px;
+    margin-right: 0.5rem;
+
+    img {
+      width: 30px;
+      margin-right: 4px;
+    }
+  }
+
+  &-contactTitle {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 0px 10px;
+    text-transform: uppercase;
+  }
+
+  &-zalo {
+    padding: 3px 3px;
+    img {
+      width: 30px;
+    }
+  }
+
+  &-call {
+    padding: 3px 3px;
+
+    img {
+      width: 30px;
+    }
+  }
+
+  &-middle {
+
+    &-search {
+      margin: 30px auto;
+      max-width: 90rem;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 50%;
+        z-index: 100;
+        width: 2rem;
+        height: 2rem;
+        transform: translateY(-50%);
+        margin-left: 1rem;
+      }
+
+      button {
+        position: absolute;
+        width: 10% !important;
+        top: 50%;
+        right: 3px;
+        border-radius: 10px !important;
+        height: 4.2rem !important;
+        transform: translateY(-50%);
+        padding: 2rem 8rem !important;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &-service {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+    color: #828282;
+  }
+
+  &-psychologicalDissemination,
+  &-psychologicalDisorder {
+    color: #DADADA;
+    font-size: 3.3rem;
+    margin-bottom: 0;
+    text-transform: capitalize;
+  }
+
+  @media (max-width: 739px) {
+
+    &-psychologicalDissemination,
+    &-psychologicalDisorder {
+      color: #DADADA;
+      font-size: 2.3rem;
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 600px) {
+    &-yourcare {
+      top: 1.5rem;
+      font-size: 2rem;
+    }
+
+    &-doctor {
+      top: -2rem;
+      font-size: 4rem;
+    }
+
+    &-zalo {
+      left: 35%;
+    }
+
+    &-call {
+      left: 46%;
+    }
+  }
+}
+
+.menu-tab {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Input-search {
+
+  .ant-input{
+    padding: 0.4rem 4.2rem;
+    border: 2px solid #FF9F00;
+  }
+}
+
+.underline {
+  font-size: 3rem;
+  color: #DADADA;
+  line-height: 0;
+  margin-bottom: 3rem;
+
+  span {
+    color: #DADADA;
+  }
+}
+
+.active {
+
+  h3, h6, p {
+    color: #FF9F00;
+  }
+}
+
+.fade {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+
+.nav-pills {
+  display: flex;
+  justify-content: space-evenly;
+}

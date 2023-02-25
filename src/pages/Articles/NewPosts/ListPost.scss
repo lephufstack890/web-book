@@ -1,0 +1,58 @@
+@import '@/assets/styles/_global.scss';
+
+.ListPost {
+  margin-bottom: 4rem;
+
+  &-title {
+    text-transform: uppercase;
+    color: #FF9F00;
+    padding-left: 1rem;
+    margin-bottom: 0;
+  }
+
+  &-item {
+    padding: 1rem;
+
+    &-wrapper {
+      color: #333;
+    }
+
+    &-wrapper:hover {
+      color: #333;
+    }
+
+    &-content {
+      padding: 1.4rem 0.4rem 0 0.6rem;
+    }
+
+    &-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+
+    &-theme {
+      margin-bottom: 0;
+
+      span {
+        color: #FF9F00;
+        font-weight: 600;
+      }
+    }
+
+    &-image {
+      width: 100%;
+    }
+
+    &-attention {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-readtime {
+      color: #B4B4B4;
+      font-weight: 500;
+      font-size: 1.4rem;
+    }
+  }
+}

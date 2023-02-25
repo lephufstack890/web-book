@@ -1,0 +1,26 @@
+@import '../../../../assets/styles/global';
+
+.BookQuestionForm {
+  &-wrapper {
+    padding: 2.4rem 3.2rem;
+
+    .Input,
+    .TextArea {
+
+      &-label {
+        position: relative;
+        background: transparent;
+        transform: none;
+        left: 0;
+        margin-bottom: 2rem;
+      }
+
+      .ant-input {
+        border-radius: 0;
+        border: none;
+        background: $white;
+        box-shadow: $common-shadow;
+      }
+    }
+  }
+}

@@ -1,0 +1,160 @@
+@import '@/assets/styles/_global.scss';
+
+.BookPropose {
+
+    &-title {
+        color: #263238;
+        font-size: 2.6rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        border-bottom: 1px solid #E0E0E0;
+        margin-bottom: 2rem;
+    }
+
+    &-itemWrapper {
+        background: linear-gradient(to right, #e0865a, #835f53);
+        height: 174px;
+        padding: 9px 15px 10px 17px;
+        border-radius: 1rem;
+        margin-bottom: 6rem;
+        margin-right: 0.4rem;
+    }
+
+    &-item {
+        display: flex;
+
+        &-contentWrapper {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 0.8rem 1rem;
+            position: relative;
+            margin-left: 1rem;
+        }
+
+        &-star {
+            padding-top: 0.4rem;
+
+            img {
+                width: 17px;
+            }
+        }
+
+        &-content {
+
+            &-title {
+                margin-bottom: 0;
+                color: #FFFFFF;
+                font-size: 1.9rem;
+                font-weight: 500;
+                line-height: 2.9rem;
+                text-decoration: none;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                display: -webkit-box;
+                overflow: hidden;
+            }
+
+            &-author {
+                margin-bottom: 0;
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 2.4rem;
+
+                span {
+                    color: #FF9F00;
+                }
+            }
+
+            &-viewTime {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &-view,
+            &-time {
+                display: flex;
+            }
+
+            &-countView,
+            &-clock {
+                margin-bottom: 0;
+                padding-left: 0.4rem;
+                color: #FFFFFF;
+                font-size: 1.4rem;
+            }
+        }
+
+        &-seeDetailWrapper {
+            display: flex;
+            justify-content: end;
+            position: absolute;
+            bottom: -10%;
+            right: 4%;
+        }
+
+        &-seeDetail {
+            background: #FFFFFF;
+            color: #FF9F00;
+            padding: 0.6rem 1.5rem;
+            font-size: 1.4rem;
+            border-radius: 1.4rem;
+        }
+
+    }
+
+    // .swiper{
+    //     overflow: visible!important;
+    // }
+
+    // .swiper-wrapper{
+    //     overflow: hidden;
+    // }
+
+    .swiper-button-prev {
+        background: #F5F4F4;
+        color: #000000;
+        padding: 0px 23px;
+        border-radius: 50%;
+        left: -18px;
+        opacity: 1;
+        cursor: pointer!important;
+        transform: translateY(-50%);
+    }
+
+    .swiper-button-prev:after {
+        content: 'prev';
+        font-size: 20px;
+    }
+
+    .swiper-button-next {
+        background: #F5F4F4;
+        color: #000000;
+        padding: 0px 23px;
+        border-radius: 50%;
+        right: -18px;
+        opacity: 1;
+        cursor: pointer!important;
+        transform: translateY(-50%);
+    }
+
+    .swiper-button-next:after {
+        content: 'next';
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .BookPropose {
+
+        &-item {
+
+            &-image {
+                width: 28% !important;
+            }
+
+        }
+        &-itemWrapper {
+            height: 116px;
+        }
+    }
+}

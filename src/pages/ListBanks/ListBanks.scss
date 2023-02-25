@@ -1,0 +1,67 @@
+@import '../../assets/styles/global';
+
+.ListBanks {
+  &-wrapper {
+    padding: 5rem 0;
+  }
+
+  &-item {
+    &-header {
+      &-logo {
+        flex: 0 0 4rem;
+        max-width: 4rem;
+        height: 4rem;
+        margin-right: 2rem;
+        padding: 1rem;
+        border-radius: 50%;
+        background: $concrete;
+        @include centerOriginImage;
+      }
+
+      &-label {
+        font-size: 1.6rem;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .ant-collapse {
+    border: none;
+    background: transparent;
+
+    .ant-collapse-item {
+      border: none;
+      border-radius: .0;
+      background: $white;
+      border: 1px solid $mercury;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+
+      .ant-collapse-header {
+        padding: 1.5rem 3rem;
+        font-size: 1.6rem;
+      }
+
+      .ant-collapse-content {
+        background: transparent;
+        border-color: $mercury;
+
+        .ant-collapse-content-box {
+          padding: 3rem;
+        }
+      }
+    }
+
+    .ant-collapse-arrow {
+      top: calc(50% - -0.2rem) !important;
+
+      .Icon {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+    }
+  }
+}

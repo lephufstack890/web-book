@@ -1,0 +1,99 @@
+@import '@/assets/styles/_global.scss';
+
+.ListFilterPost {
+
+    &-item {
+        padding: 0px 0px 3rem 3.5rem;
+
+        &-title {
+            color: #403333;
+            font-size: 1.9rem;
+            margin-bottom: 0;
+        }
+
+        &-read {
+            display: flex;
+
+            img {
+                width: 17px;
+            }
+        }
+
+        &-readtime {
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            padding-left: 7px;
+            color: #B4B4B4;
+            font-weight: 400;
+        }
+
+        &-content {
+            font-size: 1.4rem;
+            color: #333;
+            line-height: 2.4rem;
+            font-weight: 400;
+            margin: 1rem 0;
+            display: block;
+        }
+
+        &-desc {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-contentWp {
+            display: block;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 0px 0px 10px 10px;
+            padding: 1rem;
+        }
+
+        &-image {
+            width: 100%;
+        }
+
+        &-attention {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-theme {
+            color: #403333;
+            margin-bottom: 0;
+
+            span {
+                color: #0776DD;
+                font-weight: 700;
+            }
+        }
+
+        &-likeFollow {
+            display: flex;
+
+            img {
+                width: 17px;
+            }
+        }
+
+        &-likeCount,
+        &-followCount {
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+            padding-left: 1rem;
+            color: #B4B4B4;
+        }
+    }
+
+    &-pagination {
+        margin-bottom: 2.3rem;
+    }
+
+    @media (max-width: 900px) {
+        &-item {
+            padding: 0 0 3rem 0;
+        }
+    }
+}

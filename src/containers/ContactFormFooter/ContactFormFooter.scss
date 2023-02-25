@@ -1,0 +1,53 @@
+@import '@/assets/styles/_global.scss';
+
+.ContactForm {
+  width: 100%;
+  background: $white;
+  border-radius: 2.5rem;
+
+  &-form{
+    padding: 0 1.8rem;
+  }
+
+  &-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1.8rem 1.8rem;
+    background: transparent;
+  }
+
+  &-form {
+    &-submit {
+      padding: 0 0 2.6rem 0;
+
+      .Button {
+        max-width: 38.4rem;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.info{
+
+  .ant-input, .ant-select-selector, .ant-picker{
+    border-top: none!important;
+    border-right: none!important;
+    border-left: none!important;
+    box-shadow: none!important;
+    border-radius: 0!important;
+    padding: 0.4rem 0!important;
+  }
+
+  .Input-label, .Select-label, .DatePicker-label{
+    left: 0;
+  }
+}
+
+@media (max-width: 600px){
+  .ContactForm {
+    display: none;
+  }
+}

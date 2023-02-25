@@ -1,0 +1,147 @@
+@import '@/assets/styles/_global.scss';
+
+.TabServiceDiscorder {
+
+  &-list {
+    justify-content: center;
+    display: flow-root;
+
+    &-item {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0 2rem 0;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+      }
+
+      &-mantality {
+        position: absolute;
+        width: 9rem !important;
+        left: 4%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &-arrow {
+        width: 3rem !important;
+        position: absolute;
+        text-transform: uppercase;
+        font-size: 3rem;
+        right: 4%;
+        margin: 0;
+        color: #E08D02;
+        bottom: 14%;
+      }
+
+      @media (max-width: 600px) {
+        &-mantality {
+          position: absolute;
+          width: 5rem !important;
+          left: 4%;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      h1 {
+        position: absolute;
+        color: #ffff;
+        text-transform: uppercase;
+        font-size: 8.5rem;
+        right: 2%;
+        margin: 0;
+        color: #E08D02;
+        font-weight: 400;
+      }
+
+      h2 {
+        position: absolute;
+        color: #ffff;
+        text-transform: uppercase;
+        font-size: 3.6rem;
+        left: 15%;
+        top: 45%;
+        transform: translateY(-60%);
+      }
+
+      p {
+        position: absolute;
+        font-size: 3rem;
+        left: 15%;
+        top: 62%;
+        transform: translateY(-60%);
+        margin-bottom: 0;
+        font-weight: 400;
+        font-family: 'Baloo 2';
+        line-height: 2.8rem;
+      }
+
+      @media (max-width: 700px) {
+
+        h2,
+        p {
+          margin-left: 1rem;
+        }
+
+        h1 {
+          position: absolute;
+          color: #ffff;
+          text-transform: uppercase;
+          font-size: 6.5rem;
+          right: 2%;
+          margin: 0;
+          color: #E08D02;
+        }
+
+        h2 {
+          position: absolute;
+          color: #ffff;
+          text-transform: uppercase;
+          font-size: 2rem;
+          left: 15%;
+          top: 50%;
+          transform: translateY(-60%);
+        }
+
+        p {
+          position: absolute;
+          font-size: 2rem;
+          left: 15%;
+          top: 74%;
+          transform: translateY(-60%);
+          margin-bottom: 0;
+          font-weight: 600;
+          font-family: 'Baloo 2';
+          line-height: 2.8rem;
+        }
+      }
+
+      @media (max-width: 500px) {
+        h1 {
+          position: absolute;
+          color: #ffff;
+          text-transform: uppercase;
+          font-size: 3.5rem;
+          right: 2%;
+          margin: 0;
+          color: #E08D02;
+        }
+      }
+
+      @media (max-width: 300px) {
+        h1 {
+          position: absolute;
+          color: #ffff;
+          text-transform: uppercase;
+          font-size: 3.5rem;
+          right: 2%;
+          margin: 0;
+          color: #E08D02;
+        }
+      }
+
+    }
+  }
+}

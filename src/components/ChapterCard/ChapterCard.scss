@@ -1,0 +1,68 @@
+@import '@/assets/styles/_global.scss';
+
+.ChapterCard {
+  padding: 1rem;
+  transition: $common-transition;
+  background: $white;
+  box-shadow: $common-shadow;
+
+  audio {
+    display: none;
+  }
+
+  &.played,
+  &:hover {
+    background: $orange-peel;
+    cursor: pointer;
+
+    .ChapterCard {
+      &-title {
+        color: $white;
+      }
+
+      &-icon {
+        .Icon {
+          .fill {
+            fill: $white;
+          }
+
+          .stroke {
+            stroke: $white;
+          }
+        }
+      }
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 1.6rem;
+  }
+
+  &-title {
+    font-size: 1.6rem;
+    user-select: none;
+    @include ellipsis(1);
+  }
+
+  &-icon {
+    margin-left: 1.2rem;
+
+    .ant-spin {
+      &-dot {
+        &-item {
+          background-color: $white;
+        }
+      }
+    }
+
+    .Icon {
+      width: 1.6rem;
+      height: 1.6rem;
+
+      .fill,
+      .stroke {
+        transition: $common-transition;
+      }
+    }
+  }
+}

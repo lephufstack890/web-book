@@ -1,0 +1,185 @@
+@import '@/assets/styles/_global.scss';
+
+.FeedBack {
+  position: relative;
+  margin-top: 4rem;
+  background-image: url('../../../assets/images/bg_feedbackCustomer.png');
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  height: 750px;
+
+  &-wp {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  &-customer {
+    margin-right: 6rem;
+
+    &-text {
+      width: 306px;
+      text-align: end;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 2rem;
+    }
+
+    &-title {
+      font-size: 4rem;
+      text-transform: uppercase;
+      margin-bottom: 0;
+      color: $white;
+    }
+
+    @media (max-width: 1125px) {
+      &-text {
+        width: 206px;
+        text-align: end;
+        border-bottom: 1px solid #fff;
+      }
+
+      &-title {
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        color: $white;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      &-text {
+        width: 195px;
+        text-align: end;
+        border-bottom: 1px solid #fff;
+      }
+
+      &-title {
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        color: $white;
+      }
+    }
+
+    @media (max-width: 700px) {
+
+      &-text {
+        width: 183px;
+        border-bottom: 1px solid #fff;
+      }
+
+      &-title {
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        color: $white;
+      }
+
+    }
+
+    @media (max-width: 500px) {}
+  }
+
+  &-bgFeedback {
+    width: 100%;
+  }
+
+  &-inf {
+    padding-left: 3rem;
+
+    &-arrowBottom0 {
+      position: absolute;
+      right: 30%;
+      top: 25%;
+      cursor: pointer;
+    }
+
+    &-arrowBottom1 {
+      position: absolute;
+      right: 30%;
+      top: 58%;
+      cursor: pointer;
+    }
+
+    &-arrowBottom2 {
+      position: absolute;
+      right: 30%;
+      top: 91%;
+      cursor: pointer;
+    }
+
+    img {
+      width: 18px !important;
+      height: 18px !important;
+    }
+  }
+
+  &-item0 {
+    background: #fff;
+    padding: 2.4rem;
+    margin: 0 6rem 0px 0px;
+    border-radius: 1rem;
+    border-bottom: 7px solid #FF9F00;
+    z-index: 2;
+    display: flex;
+    width: 80%;
+    cursor: pointer;
+
+    img {
+      width: 144px;
+      height: 138px;
+    }
+  }
+
+  &-item1 {
+    background: #fff;
+    padding: 2.4rem;
+    margin: 0 3rem 0 3rem;
+    border-radius: 1rem;
+    border-bottom: 7px solid #FF9F00;
+    z-index: 1;
+    display: flex;
+    width: 80%;
+    cursor: pointer;
+
+    img {
+      width: 144px;
+      height: 138px;
+    }
+  }
+
+  &-item2 {
+    background: #fff;
+    padding: 2.4rem;
+    margin: 0 0 0 6rem;
+    border-radius: 1rem;
+    border-bottom: 7px solid #FF9F00;
+    z-index: 0;
+    display: flex;
+    width: 80%;
+    cursor: pointer;
+
+    img {
+      width: 144px;
+      height: 138px;
+    }
+  }
+
+
+  @media (max-width: 700px) {
+
+    &-item0,
+    &-item1,
+    &-item2 {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 739px) {
+  .FeedBack {
+    height: 200px;
+  }
+}

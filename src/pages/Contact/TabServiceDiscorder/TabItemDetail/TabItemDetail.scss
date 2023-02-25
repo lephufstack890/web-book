@@ -1,0 +1,163 @@
+@import '@/assets/styles/_global.scss';
+
+.TabItemDetailDiscord {
+  margin-bottom: 3rem;
+
+  &-container {
+    padding: 0px 8px;
+    max-width: 144rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &-item {
+    background: #F4F9FC;
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.25);
+    margin: -30px 0 3.7rem 0;
+    padding: 0;
+    margin-bottom: 0;
+
+
+    &-des {
+      padding: 4rem 3rem 1rem 3rem;
+
+      p {
+        color: #333 !important;
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+
+        span {
+          color: #FF9F00;
+          font-weight: 600;
+        }
+
+        img {
+          padding-right: 2rem;
+        }
+      }
+    }
+  }
+
+  &-seemore {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 1.2rem 1.8rem;
+    align-items: center;
+
+    &-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+
+      img {
+        padding-right: 1rem;
+      }
+    }
+
+    &-text {
+      color: $white !important;
+      cursor: pointer;
+
+      img {
+        padding-left: 1rem;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+      font-family: 'Baloo Bhai';
+      color: #FF9F00;
+    }
+  }
+}
+
+.TabItemDetailDiscordSeeMore {
+  display: flex;
+  justify-content: space-around;
+  background: #F4F9FC;
+  box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.25);
+  margin: -30px 0 0 0;
+  padding: 5rem;
+
+  &-item {
+    padding: 0 1.7rem;
+    margin-bottom: 2rem;
+    width: 100%;
+
+    &-title {
+      border-radius: 8px;
+      padding: 3rem 0px;
+
+      h2 {
+        text-align: center;
+        padding: 3px;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 0;
+        font-size: 1.7rem;
+        align-items: center;
+      }
+
+      p {
+        margin: 0;
+        color: #ffffff !important;
+        text-align: center;
+        padding: 0;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 0;
+        font-size: 1.3rem;
+        align-items: center;
+      }
+    }
+
+    &-des {
+      background: #fff;
+      box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.25);
+      padding: 1.6rem 3.3rem;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+      li {
+        color: #333 !important;
+        margin-bottom: 1.4rem;
+        font-size: 1.5rem;
+      }
+
+      p {
+        color: #333 !important;
+        margin-bottom: 0.6rem;
+        font-size: 1.6rem;
+        line-height: 3rem;
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    &-item {
+      padding: 1.2rem 1.7rem;
+    }
+  }
+}
+
+.TabItemDetailDiscordSeeMore.active{
+  padding: 5rem 0.7rem!important;
+}
+
+.active .TabItemDetailDiscordSeeMore-item.active{
+  padding: 0 0.7rem!important;
+}
+
+.active.ant-col-lg-4{
+  flex: 0 0 19.666667%;
+  max-width: 26.666667%;
+}
+
+@media (max-width: 800px) {
+  .active.ant-col-lg-4{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

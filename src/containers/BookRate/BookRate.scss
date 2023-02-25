@@ -1,0 +1,137 @@
+@import '@/assets/styles/_global.scss';
+
+.BookRate {
+  &-comments {
+    &-item {
+      margin-top: 1rem;
+      background: $white;
+      box-shadow: $common-shadow;
+      padding: 3rem 4rem;
+
+      &-avatar {
+        margin-right: 1.5rem;
+
+        .Avatar {
+          .ant-avatar {
+            width: 7rem;
+            height: 7rem;
+          }
+        }
+      }
+
+      &-info {
+        &-name {
+          font-size: 2rem;
+          font-weight: 600;
+          margin-bottom: 0.8rem;
+          text-transform: capitalize;
+
+          @media (max-width: 991px) {
+            flex-direction: column;
+            align-items: flex-start !important;
+          }
+        }
+
+        &-date {
+          font-size: 1.6rem;
+          margin-left: 4.4rem;
+
+          @media (max-width: 991px) {
+            margin-left: 0;
+          }
+        }
+
+        &-rate {
+          margin-left: 4.4rem;
+
+          @media (max-width: 991px) {
+            margin-left: 0;
+
+            .Rate .ant-rate {
+              font-size: 1.8rem;
+            }
+          }
+        }
+
+        &-content {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+  &-rate {
+    background: $white;
+    border: 1px solid $mercury;
+
+    .ant-col {
+      padding: 2rem 4rem;
+
+      &:nth-child(2) {
+        border-left: 1px solid $mercury;
+        border-right: 1px solid $mercury;
+
+        @media (max-width: 991px) {
+          border-left: none;
+          border-right: none;
+          border-top: 1px solid $mercury;
+          border-bottom: 1px solid $mercury;
+        }
+      }
+    }
+
+    &-total {
+      text-align: center;
+      border: 1px solid $orange-peel;
+      border-radius: 1rem;
+      height: 100%;
+
+      &-label {
+        font-size: 3.8rem;
+        font-weight: 700;
+        color: $flamingo;
+        display: block;
+      }
+    }
+
+    &-detail {
+
+      &-item {
+        &:not(:last-child) {
+          margin-bottom: 2.4rem;
+        }
+
+        &-label {
+          font-size: 1.8rem;
+          font-weight: 500;
+          color: $scorpion;
+          margin-bottom: 1rem;
+        }
+
+        &-progress {
+          position: relative;
+          height: .5rem;
+          width: 100%;
+          background: $mercury;
+
+          &-line {
+            @include fullAbsolute;
+            background: $flamingo;
+            ;
+          }
+        }
+      }
+    }
+
+    &-btn {
+      height: 100%;
+
+      .Button {
+        .ant-btn {
+          height: 6rem;
+          padding: .4rem 5rem;
+        }
+      }
+    }
+  }
+}

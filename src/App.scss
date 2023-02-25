@@ -1,0 +1,20 @@
+@import './assets/styles/global';
+
+.App {
+  transition: $common-transition;
+  position: relative;
+
+  &.visible-audio {
+    padding-bottom: 15.7rem;
+
+    @media (max-width: 991px) {
+      padding-bottom: 21rem;
+    }
+  }
+
+  .advise{
+    position: absolute;
+    bottom: 8%;
+    right: 8%;
+  }
+}

@@ -1,0 +1,179 @@
+@import '../../assets/styles/global';
+
+.BookAudio {
+  background: linear-gradient(180deg, #FFB63C 0%, #FFA30A 83.7%);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  transform: translateY(100%);
+  transition: $common-transition;
+
+  &.visible {
+    transform: translateY(0);
+  }
+
+  &-close {
+    width: 2.8rem;
+    height: 2.8rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+  }
+
+  &-wrapper {
+    padding: 1.6rem .8rem;
+
+    @media (max-width: 991px) {
+      padding: 1.6rem;
+
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  &-image {
+    max-width: 20.4rem;
+    flex: 0 0 20.4rem;
+    position: relative;
+    height: 12.5rem;
+    overflow: hidden;
+    padding: 1rem;
+    margin-right: 4rem;
+    cursor: pointer;
+    @include centerOriginImage;
+
+    @media (max-width: 991px) {
+      display: none;
+      margin: 0 0 2.4rem 0;
+    }
+
+    &::before {
+      @include fullAbsolute;
+      z-index: 1;
+      background: linear-gradient(180deg, #42B3FF 0%, #AEFAFF 100%);
+      content: ''
+    }
+
+    img {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &-info {
+    max-width: 30rem;
+    margin-right: 2.4rem;
+
+    @media (max-width: 991px) {
+      display: none;
+      max-width: 100%;
+      margin: 0;
+    }
+
+    &-title {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: $white;
+      cursor: pointer;
+      margin-bottom: 1rem;
+      @include ellipsis(1);
+    }
+
+    &-author {
+      font-size: 2.4rem;
+      color: $white;
+      @include ellipsis(1);
+    }
+  }
+
+  &-control {
+    flex: 1;
+    transition: $common-transition;
+
+    &.loading {
+      pointer-events: none;
+      opacity: 0.6;
+    }
+
+    @media (max-width: 991px) {
+      width: 100%;
+      margin: 2.4rem 0 1.6rem;
+    }
+
+    &-chapter {
+      font-size: 18px;
+      color: $white;
+      text-align: center;
+      margin-bottom: 10px;
+      cursor: pointer;
+      @include ellipsis(1);
+    }
+
+    &-bars {
+      position: relative;
+
+      .css-7ckts9-Slider {
+        cursor: pointer;
+      }
+
+      // &-current,
+      // &-total {
+      //   position: absolute;
+      //   color: $white;
+      //   font-size: 1.4rem;
+      //   font-weight: 400;
+      //   top: calc(100% + 20px)
+      // }
+
+      // &-current {
+      //   left: 0;
+      // }
+
+      // &-total {
+      //   right: 0;
+      // }
+    }
+
+
+    &-actions {
+      margin-top: 15px;
+
+      &-item {
+        color: $white;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        user-select: none;
+
+        &.disabled {
+          opacity: 0.6;
+          cursor: not-allowed;
+        }
+
+        span {
+          margin-left: 4px;
+        }
+
+        .Icon {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  .Loading {
+    .ant-spin {
+      &-dot {
+        &-item {
+          background-color: $white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import '@/assets/styles/_global.scss';
+
+.ModalFeedBack {
+  position: absolute;
+  top: 10%;
+  left: 55%;
+  background: #ffffff;
+  z-index: 100;
+  transform: translateX(-50%);
+  padding: 30px;
+  box-shadow: 1px 3px 2px rgb(0, 0, 0.25);
+  border-radius: 7px;
+  display: none;
+  height: 50%;
+  width: 50%;
+
+  &-info {
+    padding-left: 3rem;
+  }
+
+  &-title {
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+
+  &-img {
+    width: 14.4rem !important;
+    height: 13.8rem;
+  }
+
+  &-close {
+    width: 1.4rem !important;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+  }
+
+}
+
+.showModal {
+  display: flex !important;
+  display: block;
+}

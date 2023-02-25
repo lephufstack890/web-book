@@ -1,0 +1,74 @@
+@import '../../../assets/styles/global';
+
+.TabDocument {
+  border-left: 1px solid $mercury;
+  border-right: 1px solid $mercury;
+  background: $alabaster;
+
+  &-list {
+    padding: 1.5rem;
+    max-height: 53rem;
+    overflow: auto;
+
+    &-item {
+      padding: 1.5rem 1rem;
+      margin-bottom: 1rem;
+      background: $white;
+      box-shadow: $common-shadow;
+      transition: $common-transition;
+
+      &.disabled {
+        cursor: not-allowed !important;
+        opacity: 0.6;
+      }
+
+      &.active,
+      &:not(.disabled):hover {
+        cursor: pointer;
+
+        .TabDocument-list-item {
+          &-info {
+            &-title {
+              color: $orange-peel;
+            }
+          }
+        }
+      }
+
+      &-icon {
+        flex: 0 0 5.8rem;
+        max-width: 5.8rem;
+        height: 5.8rem;
+        margin-right: 1.5rem;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &-info {
+        &-title {
+          font-size: 1.8rem;
+          font-weight: 500;
+          transition: $common-transition;
+        }
+
+        &-description {
+          font-size: 1.4rem;
+        }
+
+        &-download {
+          font-size: 1.6rem;
+          color: $orange-peel;
+          cursor: pointer;
+
+          img {
+            flex: 0 0 1.5rem;
+            max-width: 1.5rem;
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

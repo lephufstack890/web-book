@@ -1,0 +1,20 @@
+@import '@/assets/styles/_global.scss';
+
+.CategoriesEmotion {
+ 
+  .swiper-slide {
+    text-align: center;
+    background: #EDF5FC;
+    margin: 0px 5px;
+    padding: 1.3rem 0;
+    border-radius: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  &-select{
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}

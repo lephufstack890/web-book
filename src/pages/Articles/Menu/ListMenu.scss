@@ -1,0 +1,37 @@
+@import '@/assets/styles/_global.scss';
+
+.ListMenu {
+    padding-bottom: 6rem;
+
+    &-list {
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        border-bottom-left-radius: 13px;
+        border-bottom-right-radius: 13px;
+    }
+
+    &-title {
+        background-color: #FF9F00;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 8px;
+        border-top-left-radius: 13px;
+        border-top-right-radius: 13px;
+        color: #fff;
+        margin-bottom: 0;
+    }
+
+    &-item {
+        display: flex;
+        width: 100%;
+        padding: 1rem;
+        border-bottom: 1px solid #eae5e5;
+
+        &-text {
+            margin-bottom: 0;
+            color: #000000;
+            font-size: 1.7rem;
+            padding-left: 1rem;
+        }
+    }
+}

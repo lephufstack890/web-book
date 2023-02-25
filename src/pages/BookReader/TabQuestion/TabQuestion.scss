@@ -1,0 +1,69 @@
+@import '../../../assets/styles/global';
+
+.TabQuestion {
+  border-left: 1px solid $mercury;
+  border-right: 1px solid $mercury;
+  background: $alabaster;
+
+  &-list {
+    .WrapperLazyLoad {
+      padding: 1.5rem;
+    }
+
+    &-item {
+      padding: 1.8rem 1rem;
+      margin-bottom: 1rem;
+      background: $white;
+      box-shadow: $common-shadow;
+
+      &:hover {
+        .TabQuestion-list-item {
+          &-title {
+            color: $orange-peel;
+          }
+        }
+      }
+
+      &-reply {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 1.5rem 0 0;
+        border-top: 1px solid $mercury;
+        margin-top: 1.5rem;
+        column-gap: .8rem;
+      }
+
+      &-avatar {
+        margin-right: 2rem;
+
+        .Avatar {
+          .ant-avatar {
+            width: 5.8rem;
+            height: 5.8rem;
+          }
+        }
+      }
+
+      &-info {
+        flex: 1;
+
+        &-title {
+          font-size: 1.6rem;
+          font-weight: 600;
+        }
+
+        &-date {
+          font-size: 1.4rem;
+          font-weight: 600;
+          margin-left: 1.4rem;
+          color: $flamingo;
+        }
+
+        &-description {
+          font-size: 1.6rem;
+          color: $scorpion;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import '../../assets/styles/global';
+
+.AccountInformation {
+  &-card {
+    box-shadow: $common-shadow;
+    background: $white;
+
+    &-header {
+      font-size: 2rem;
+      font-weight: 500;
+      padding: 1rem;
+      background: $moon-raker;
+      text-align: center;
+    }
+
+    &-body {
+      padding: 2.4rem 1.6rem;
+    }
+
+    &-form {
+      &-avatar {
+        .ant-form-item-explain {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
